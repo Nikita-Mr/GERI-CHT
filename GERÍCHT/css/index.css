@@ -1,0 +1,230 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.header-wrapper {
+    background-color: black;
+}
+
+.collapse {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.navbar {
+    height: 121px !important;
+}
+
+.navbar-brand {
+    font-family: 'Cormorant Upright', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px !important;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+}
+
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF !important;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+.wrapper-row {
+    padding: 48px 140px 56px;
+}
+
+.content-first {
+    padding: 50px 0;
+}
+
+.Cormorant-Upright {
+    font-family: 'Cormorant Upright', serif;
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 23px;
+    line-height: 130% !important;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Cormorant Upright', serif;
+    font-style: normal;
+    font-size: 72px !important;
+    line-height: 130% !important;
+    text-transform: capitalize;
+    color: #DCCA87;
+}
+
+.subtext {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #AAAAAA;
+}
+
+button {
+    background: #DCCA87;
+    width: 157px;
+    height: 44px;
+    font-family: 'Cormorant Upright', serif !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175% !important;
+    letter-spacing: 0.04em;
+    color: #0C0B08;
+}
+
+.wrapper-img {
+    max-width: inherit;
+    position: relative;
+    z-index: 1;
+    height: inherit;
+
+}
+
+.content-second{
+    height: 100%;
+}
+
+.wrapper-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper-img::after {
+    z-index: -1 !important;
+    position: absolute;
+    top: -20px !important;
+    left: 120px;
+    content: '';
+    border: 200px solid transparent;
+    border-top: 200px solid #DCCA87;
+    border-right: 200px solid #DCCA87;
+}
+
+.wrapper-img::before {
+    z-index: -1 !important;
+    position: absolute;
+    bottom: -20px;
+    right: 120px;
+    content: '';
+    border: 200px solid transparent;
+    border-bottom: 200px solid #DCCA87;
+    border-left: 200px solid #DCCA87;
+}
+
+.hero .container {
+    position: relative;
+}
+
+.hero .container::before {
+    position: absolute;
+    content: '#Bar  #Gericht';
+    left: 0;
+    bottom: 50%;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+    transform-origin: 0 100%;
+}
+
+.hero .container::after {
+    position: absolute;
+    content: '01 - 02 03 04';
+    bottom: 0;
+    right: 30%;
+    color: #FFFFFF;
+    font-family: 'Cormorant Upright' serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+}
+
+.hero {
+    padding: 20px;
+}
+
+.navbar-nav {
+    position: relative;
+}
+
+.palka {
+    position: absolute;
+    bottom: -4px;
+    left: 62.5%;
+}
+
+.up {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.topNubex {
+    display: block;
+    font-family: 'Cormorant Upright' serif !important;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #DCCA87;
+    text-decoration: none;
+}
+.up img{
+    position: relative;
+    top: -15px;
+}
+@media (min-width:769px) and (max-width:1441px) {
+    .wrapper-img::before {
+        z-index: -1 !important;
+        position: absolute;
+        bottom: -20px;
+        right: 73px;
+        content: '';
+        border: 200px solid transparent;
+        border-bottom: 100px solid #DCCA87;
+        border-left: 100px solid #DCCA87;
+    }
+    .wrapper-img::after {
+        z-index: -1 !important;
+        position: absolute;
+        top: -20px !important;
+        left: 73px;
+        content: '';
+        border: 200px solid transparent;
+        border-top: 100px solid #DCCA87;
+        border-right: 100px solid #DCCA87;
+    }
+    .wrapper-row {
+        padding: 48px 105px 56px;
+    }
+    
+}
